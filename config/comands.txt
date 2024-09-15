@@ -1,0 +1,9 @@
+bin/cake bake migration CreateCompanies name:string[50] address:string identification:string[20] created modified
+bin/cake bake migration CreateRoles name:string[50] created modified
+bin/cake bake migration CreateVehicleTypes name:string[50] created modified
+bin/cake bake migration CreateServiceTypes name:string[50] created modified
+bin/cake bake migration CreateUsers username:string[50] password:string name:string[100] email:string[100] created modified
+bin/cake bake migration CreateVehicleFees vehicle_type_id:integer service_type_id:integer value:integer created modified
+bin/cake bake migration CreateServices vehicle_type_id:integer description:string plate:string[15] datetime_start:datetime datetime_end:datetime value:integer user_id:integer created modified
+bin/cake bake migration AddRoleToUsers role_id:integer
+
